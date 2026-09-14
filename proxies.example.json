@@ -1,0 +1,35 @@
+{
+  "_comment": "Copy to proxies.json and fill in your own endpoints. Credentials support ${ENV_VAR} expansion - never commit real credentials.",
+  "proxies": [
+    {
+      "host": "res-proxy-1.example.com",
+      "port": 8000,
+      "username": "${PROXY_USER}",
+      "password": "${PROXY_PASS}",
+      "proxy_type": "residential",
+      "country": "US",
+      "city": null,
+      "isp": "Comcast"
+    },
+    {
+      "host": "res-proxy-2.example.com",
+      "port": 8000,
+      "username": "${PROXY_USER}",
+      "password": "${PROXY_PASS}",
+      "proxy_type": "residential",
+      "country": "US",
+      "city": "Chicago",
+      "isp": "Verizon"
+    },
+    {
+      "host": "res-proxy-3.example.com",
+      "port": 8000,
+      "username": "${PROXY_USER}",
+      "password": "${PROXY_PASS}",
+      "proxy_type": "mobile",
+      "country": "GB",
+      "city": "London",
+      "isp": "BT Group"
+    }
+  ]
+}
